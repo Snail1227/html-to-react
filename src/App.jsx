@@ -52,7 +52,7 @@ export function CharacterCards() {
                 alt="" 
               />
               <p>{character.background}</p>
-          </div>
+            </div>
         );
       })}
     </>
