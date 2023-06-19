@@ -1,17 +1,11 @@
 import React from 'react'
 import ReactDOM from 'react-dom/client'
-import {CharacterRatings, CharacterCards} from './App.jsx'
+import App from './App.jsx'
 
 import './index.css'
 
-ReactDOM.createRoot(document.getElementById('character-ratings')).render(
+ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-    <CharacterRatings /> 
+    <App/> 
   </React.StrictMode>,
-)
-
-ReactDOM.createRoot(document.getElementById('character-cards')).render(
-  <React.StrictMode>
-    <CharacterCards />
-  </React.StrictMode>
 )
