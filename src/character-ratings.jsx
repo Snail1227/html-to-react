@@ -1,4 +1,5 @@
 import { data } from '../public/fma-data.ts';
+import HeaderOfTop5 from './HeaderOfTop5.jsx';
 
 function CharacterRating() {
     const top5 = data 
@@ -11,13 +12,11 @@ function CharacterRating() {
       <section id='character-ratings'>
         <h4>Top Characters</h4>
         <table>
-          <thead>
-            <tr>
-              <th>Name</th>
-              <th>Skillset</th>
-              <th>Votes</th>
-            </tr>
-          </thead>
+            <HeaderOfTop5 
+              name='Name'
+              skills='SkillSet'
+              votes='Votes'
+            />
             <tbody>
               {top5.map((character, index) => {
                 const rowClass = index % 2 === 0 ? 'dark' : 'light';

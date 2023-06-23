@@ -7,10 +7,10 @@ import CharacterCards from './character-cards'
 export function App() {
 
   return (
-    <div>
+    <>
       <CharacterRating/>
       <CharacterCards/>
-    </div>
+    </>
   )
 }
 
